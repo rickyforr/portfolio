@@ -103,7 +103,7 @@ export default function SomethingIveBuilt() {
                                     and smart contract deployer. Through
                                     omakasea users can upload image layers to
                                     create generative nft collections, create
-                                    and customize a mint pages and execute smart
+                                    and customize mint pages and execute smart
                                     contract functions using our intuitive ui.{" "}
                                 </p>
                             </div>

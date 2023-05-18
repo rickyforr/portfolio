@@ -76,14 +76,10 @@ export default function Home() {
                 <WhereIHaveWorked />
                 <SomethingIveBuilt />
                 <GetInTouch />
-                {context.sharedState.finishedLoading ? (
-                    <Footer
-                        githubUrl={"https://github.com/hktitof/my-website"}
-                        hideSocialsInDesktop={true}
-                    />
-                ) : (
-                    <></>
-                )}
+                <Footer
+                    githubUrl={"https://github.com/hktitof/my-website"}
+                    hideSocialsInDesktop={true}
+                />
             </div>
         </>
     );
