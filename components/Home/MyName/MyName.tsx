@@ -62,7 +62,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
                 <span className="text-AAsecondary">software engineer</span> with
                 a passion for bringing ideas to life.
                 <br className="md:block hidden" />
-                Currently I&apos;m focused on full stack development of{" "}
+                Currently I&apos;m focused on developing{" "}
                 <span className="text-AAsecondary">Web3</span> applications.
             </motion.h3>
             <motion.div
