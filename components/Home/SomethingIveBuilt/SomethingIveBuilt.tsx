@@ -3,8 +3,6 @@ import { useRouter } from "next/router";
 import React from "react";
 import ArrowIcon from "../../Icons/ArrowIcon";
 import Img from "../../smallComp/image/Img";
-import GithubIcon from "../../Icons/GithubIconForSomethingIveBuild";
-import ExternalLink from "../../Icons/ExternalLink";
 
 export default function SomethingIveBuilt() {
     const router = useRouter();
