@@ -1,15 +1,15 @@
-import React from "react";
+import React, { MutableRefObject } from "react";
 import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
-export default function AboutMe(props) {
+import { uiText } from "../../../system/uiText";
+
+export default function AboutMe({
+    ref,
+}: {
+    ref: MutableRefObject<HTMLDivElement>;
+}) {
     const technologies = [
-        [
-            "React",
-            "Next.js",
-            "Ether.js",
-            "JavaScript (ES6+)",
-            "Tailwind CSS",
-        ],
+        ["React", "Next.js", "Ether.js", "JavaScript (ES6+)", "Tailwind CSS"],
         ["MongoDB", "Node.js", "alchemy-sdk", "TypeScript", "Material UI"],
     ];
     return (
@@ -19,10 +19,7 @@ export default function AboutMe(props) {
             className="snap-start flex flex-col  items-center py-20 bg-AAprimary"
         >
             {/* // ? 0.1 About Me */}
-            <div
-                className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
-        md:w-[700px] lg:w-[900px] "
-            >
+            <div className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] md:w-[700px] lg:w-[900px]">
                 <div className="flex flex-row items-center ">
                     <div className="flex flex-row  items-center mr-4">
                         <ArrowIcon
@@ -35,42 +32,33 @@ export default function AboutMe(props) {
                             01.
                         </span>
                         <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
-                            About Me
+                            {uiText.aboutMeTitle}
                         </span>
                     </div>
                     <div className="bg-gray-400 h-[0.2px] w-full sm:w-72 ml-4"></div>
                 </div>
-                {/* // ? Paragraphs */}
 
+                {/* // ? Paragraphs */}
                 <div className="w-full flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 sm:space-x-2 ">
                     <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
                         <div className="font-Header ">
                             <span className="text-gray-400  tracking-wide">
-                                Hello! My name is Richard and I love creating.
-                                My interest in web development started in 2017
-                                when I began helping friends and family setup
-                                websites for their small businesses. From then
-                                on I was hooked.
+                                {uiText.aboutMeText1}
                             </span>
                         </div>
                         <div className="font-Header tracking-wide">
                             <span className="text-gray-400  ">
-                                Currently I&apos;m working as a Full Stack
-                                Developer at{" "}
+                                {uiText.aboutMeText2}{" "}
                                 <span className="text-AAsecondary">
                                     {" "}
-                                    Omakasea
-                                    {" "}
+                                    {uiText.currentCompanyTitle}{" "}
                                 </span>
-                                a small start up focused on developing
-                                innovative web3 applications{" "}
+                                {uiText.aboutMeText3}{" "}
                             </span>
                         </div>
-
                         <div className="font-Header tracking-wide">
-                            <span className="text-gray-400  ">
-                                Here are a few technologies I&apos;ve been
-                                working with recently:
+                            <span className="text-gray-400">
+                                {uiText.currentTechStackText}
                             </span>
                         </div>
                         <div className="font-Header tracking-wide flex flex-row space-x-16">
@@ -118,6 +106,7 @@ export default function AboutMe(props) {
                             </div>
                         </div>
                     </div>
+
                     {/* // ? Image in Desktop and Tablet */}
                     <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden ">
                         <div
@@ -135,17 +124,17 @@ export default function AboutMe(props) {
                             />
                         </div>
                     </div>
+
                     {/* // ?Image in Mobile */}
                     <div className=" relative w-full h-48 md:hidden  flex justify-center items-center">
                         <div className="absolute w-48 h-full  rounded  translate-x-5 translate-y-5 border-2 border-AAsecondary"></div>
                         <div className="absolute w-48 h-full rounded overflow-hidden">
                             <Img
-                                src={"/img/titof.jpg"}
+                                src={"/img/rich_portfolio_1.jpg"}
                                 className={"object-contain rounded-lg"}
                                 alt="My Image Not Found"
                             />
                         </div>
-                        <div className="absolute w-48 h-full  bg-AAsecondary opacity-60  rounded overflow-hidden"></div>
                     </div>
                 </div>
             </div>

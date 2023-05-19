@@ -1,8 +1,6 @@
 import Header from "../components/Header/Header";
-import Startup from "../components/Header/StartupLogo/Startup";
 import MyName from "../components/Home/MyName/MyName";
 import { useContext, useEffect, useState, useRef } from "react";
-import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
 import AboutMe from "../components/Home/AboutMe/AboutMe";
 import WhereIHaveWorked from "../components/Home/WhereIHaveWorked/WhereIHaveWorked";
 import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
@@ -15,7 +13,6 @@ import Head from "next/head";
 import { meta } from "../system/constants";
 
 export default function Home() {
-    const [ShowElement, setShowElement] = useState(false);
     const context = useContext(AppContext);
     const aboutRef = useRef<HTMLDivElement>(null);
     const homeRef = useRef<HTMLDivElement>(null);
@@ -67,17 +64,14 @@ export default function Home() {
                 <meta name="twitter:image" content={meta.image} /> */}
             </Head>
             <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
-                <Header finishedLoading={true} sectionsRef={homeRef} />
-                <MyName finishedLoading={true} />
-                {/* <SocialMediaArround
-                    finishedLoading={context.sharedState.finishedLoading}
-                /> */}
+                <Header sectionsRef={homeRef} />
+                <MyName />
                 <AboutMe ref={aboutRef} />
                 <WhereIHaveWorked />
                 <SomethingIveBuilt />
                 <GetInTouch />
                 <Footer
-                    githubUrl={"https://github.com/hktitof/my-website"}
+                    githubUrl={"https://github.com/rickyforr/portfolio"}
                     hideSocialsInDesktop={true}
                 />
             </div>

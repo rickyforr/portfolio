@@ -90,3 +90,49 @@ export const freelanceJobDescription = [
         keywords: [],
     },
 ];
+
+export const jobDescriptions = [
+    {
+      description: "Omakasea",
+      tasks: omakaseaJobDescription,
+      company: "Omakasea",
+      jobTitle: "FullStack Developer",
+      dates: "Nov 2021 - Current"
+    },
+    {
+      description: "Openhouse",
+      tasks: openhouseJobDescription,
+      company: "Openhouse",
+      jobTitle: "Frontend Developer",
+      dates: "Jan 2021 - Nov 2021"
+    },
+    {
+      description: "Resource Energy Solutions",
+      tasks: resJobDescription,
+      company: "Resource Energy Solutions",
+      jobTitle: "Frontend Developer",
+      dates: "Apr 2020 - Dec 2020"
+    },
+    {
+      description: "Absorb LMS",
+      tasks: absorbJobDescription,
+      company: "Absorb LMS",
+      jobTitle: "Junior Developer",
+      dates: "Jan 2018 - Mar 2020"
+    },
+    {
+      description: "Spartan Spark",
+      tasks: spartanJobDescription,
+      company: "Spartan Spark",
+      jobTitle: "Junior Developer",
+      dates: "Aug 2017 - Dec 2017"
+    },
+    {
+      description: "Freelance",
+      tasks: freelanceJobDescription,
+      company: "Freelance",
+      jobTitle: "Contract Web Developer",
+      dates: "February 2016 - July 2017"
+    }
+  ];
+  
