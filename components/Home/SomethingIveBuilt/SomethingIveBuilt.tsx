@@ -265,9 +265,11 @@ export default function SomethingIveBuilt() {
                                 <p className="text-gray-300 md:text-gray-400 text-left ">
                                     Megalith TV is an accretive streaming video
                                     platform. Allowing token holders to upload
-                                    content to 2 week long repeating video
-                                    stream. 
-                                   
+                                    content to a 2 week long repeating video
+                                    stream. The duration of content users are able to upload
+                                    was determined by the amount of ethereum sent to the contract in order to mint the NFT.
+                                    Token holders have broadcasting rights to the Megalith stream and can upload content of their choosing 
+                                    which is shown at a defined time slot within the 2 week streaming period.
                                 </p>
                             </div>
                             <ul
