@@ -43,7 +43,7 @@ export default function WhereIHaveWorked() {
                     DescriptionJob === jobDescription.description ? (
                         <JobDescription
                             tasks={jobDescription.tasks}
-                            jobTitle={jobDescription.description}
+                            jobTitle={jobDescription.jobTitle}
                             company={jobDescription.company}
                             dates={jobDescription.dates}
                         />
