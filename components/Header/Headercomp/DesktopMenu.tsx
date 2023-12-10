@@ -60,7 +60,7 @@ export default function DesktopMenu() {
                     </span>
                 </ReactScrollLink>
             </span>
-            <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
+            <a href={"/resume20231210.pdf"} target={"_blank"} rel="noreferrer">
                 <button className="text-AAsecondary border border-spacing-2 py-2 px-3 rounded-sm border-AAsecondary hover:bg-ResumeButtonHover">
                     Resume
                 </button>

@@ -57,7 +57,7 @@ export default function MyName() {
                 }}
                 className="mt-12"
             >
-                <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
+                <a href={"/resume20231210.pdf"} target={"_blank"} rel="noreferrer">
                     <button className="bg-AAprimary text-AAsecondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-AAsecondary">
                         {uiText.checkoutMyResumeButtonText}
                     </button>
