@@ -44,7 +44,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center "
           >
             <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a href={"https://omakasea.dev"} target="_blank" rel="noreferrer">
+              <a href={"https://omakasea.com"} target="_blank" rel="noreferrer">
                 <div
                   className="absolute w-full h-full rounded bg-AAprimary 
            transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
@@ -81,7 +81,7 @@ export default function SomethingIveBuilt() {
                 <span className="text-AAsecondary text-base">
                   Recent Project
                 </span>
-                <Link href={"https://omakasea.dev"}>
+                <Link href={"https://omakasea.com"}>
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     Omakasea NFT Generator
                   </span>
@@ -89,7 +89,7 @@ export default function SomethingIveBuilt() {
               </div>
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left ">
-                  I led the Frontend development for omakasea.dev a generative
+                  I led the Frontend development for omakasea.com a generative
                   nft art generator and smart contract deployer. Through
                   omakasea users can upload image layers to create generative
                   nft collections, create and customize mint pages and execute
